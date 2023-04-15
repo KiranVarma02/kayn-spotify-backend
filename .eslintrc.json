@@ -13,15 +13,13 @@
     "project": "./tsconfig.json"
   },
   "rules": {
-    "@typescript-eslint/explicit-member-accessibility": "warn",
+    "@typescript-eslint/explicit-member-accessibility": "off",
     "@typescript-eslint/no-misused-promises": 0,
     "@typescript-eslint/no-floating-promises": 0,
-    "max-len": [
-      "warn",
-      {
-        "code": 80
-      }
-    ],
+    "@typescript-eslint/no-unsafe-member-access": 0,
+    "@typescript-eslint/no-unsafe-assignment": 0,
+    "@typescript-eslint/no-unsafe-call": 0,
+    "@typescript-eslint/no-explicit-any": 0,
     "comma-dangle": [
       "warn",
       "always-multiline"

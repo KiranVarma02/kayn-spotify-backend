@@ -31,5 +31,5 @@ export default {
     REDIRECT_URL: process.env.REDIRECT_URL,
     STATE_KEY: process.env.STATE_KEY,
     TOKEN_URL: process.env.TOKEN_URL,
-  }
+  },
 } as const;

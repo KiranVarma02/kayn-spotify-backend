@@ -11,15 +11,12 @@ import logger from 'jet-logger';
 import cors from 'cors';
 import 'express-async-errors';
 
-import BaseRouter from '@src/routes/users/api';
-import Paths from '@src/routes/users/constants/Paths';
-
 import EnvVars from '@src/constants/EnvVars';
 import HttpStatusCodes from '@src/constants/HttpStatusCodes';
 
 import {NodeEnvs} from '@src/constants/misc';
 import {RouteError} from '@src/other/classes';
-import spotifyAuthRouter from "@src/routes/spotify/api";
+import spotifyAuthRouter from '@src/routes/spotify/api';
 
 
 // **** Variables **** //
@@ -29,7 +26,7 @@ const app = express();
 
 // **** Setup **** //
 
-app.use(cors())
+app.use(cors());
 
 // Basic middleware
 app.use(express.json());

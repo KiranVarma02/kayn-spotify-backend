@@ -22,11 +22,12 @@ export function tick(milliseconds: number): Promise<void> {
 }
 
 export function generateRandomString(length: number): string {
-  let text: string = ''
-  let possible: string = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
+  let text = '';
+  const possible
+      = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
 
-  for (let i: number = 0; i < length; i++) {
-    text += possible.charAt(Math.floor(Math.random() * possible.length))
+  for (let i = 0; i < length; i++) {
+    text += possible.charAt(Math.floor(Math.random() * possible.length));
   }
 
   return text;
