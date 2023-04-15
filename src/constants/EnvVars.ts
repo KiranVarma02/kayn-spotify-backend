@@ -25,4 +25,11 @@ export default {
     Secret: (process.env.JWT_SECRET ?? ''),
     Exp: (process.env.COOKIE_EXP ?? ''), // exp at the same time as the cookie
   },
+  AppEnv: {
+    CLIENT_ID: process.env.CLIENT_ID,
+    CLIENT_SECRET: process.env.CLIENT_SECRET,
+    REDIRECT_URL: process.env.REDIRECT_URL,
+    STATE_KEY: process.env.STATE_KEY,
+    TOKEN_URL: process.env.TOKEN_URL,
+  }
 } as const;

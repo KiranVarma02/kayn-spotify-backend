@@ -1,10 +1,4 @@
 **/node_modules
 dist/
 **/**/*.log
-/.idea/codeStyles/codeStyleConfig.xml
-/.idea/codeStyles/Project.xml
-/.idea/inspectionProfiles/Project_Default.xml
-/.idea/.gitignore
-/.idea/kayn-spotify-backend.iml
-/.idea/modules.xml
-/.idea/vcs.xml
+/.idea/*
